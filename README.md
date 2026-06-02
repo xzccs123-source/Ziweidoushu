@@ -1,6 +1,8 @@
 # ziwei-core
 
-紫微斗数命盘分析 Claude Code Skill。综合三合派、飞星派、钦天四化等流派技法，通过问答交互对命盘进行针对性分析。强调推导驱动而非模板填空，叠宫+自化优先于飞化的时间定位方法。
+紫微斗数命盘分析 Skill。综合三合派、飞星派、钦天四化等流派技法，通过问答交互对命盘进行针对性分析。强调推导驱动而非模板填空，叠宫+自化优先于飞化的时间定位方法。
+
+兼容 Claude Code、Cline、Cursor 及任意支持 system prompt 的 LLM 平台。
 
 ## 功能
 
@@ -11,18 +13,17 @@
 
 ## 安装
 
-将 `SKILL.md` 复制到 Claude Code 的 skills 目录：
-
-```
-cp SKILL.md ~/.claude/skills/ziwei-core/SKILL.md
-```
-
-或使用 Claude Code 的 skill 安装功能。
+| 平台 | 文件 | 位置 |
+|------|------|------|
+| Claude Code | `SKILL.md` | `~/.claude/skills/ziwei-core/` |
+| Cline | `.clinerules` | 项目根目录 或 `~/.cline/rules/` |
+| Cursor | `.cursorrules` | 项目根目录 或 `.cursor/rules/` |
+| API 直调 | 任意 `.md` | 作为 system prompt 传入 |
 
 ## 使用方式
 
 1. 从文墨天机或其他紫微斗数排盘软件复制文字命盘
-2. 在 Claude Code 中粘贴命盘，skill 自动触发
+2. 在对话中粘贴命盘，skill 自动触发
 3. 确认数据解析无误后，系统输出大局定位
 4. 根据具体需求提问，逐领域深入分析
 
@@ -43,7 +44,7 @@ cp SKILL.md ~/.claude/skills/ziwei-core/SKILL.md
 
 - 本 skill 仅解析命盘文字，不提供排盘计算引擎
 - 分析结果仅供研究或娱乐目的使用
-- 支持文墨天机 App 导出的标准格式，其他排盘工具格式需测试兼容性
+- 支持文墨天机 App 导出的标准格式
 
 ## 许可证
 
