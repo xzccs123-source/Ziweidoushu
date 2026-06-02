@@ -8,7 +8,7 @@ Thumbs.db
 .idea/
 .vscode/
 
-# Reports
+# Markdown
 *.md
 !SKILL.md
 !README.md
